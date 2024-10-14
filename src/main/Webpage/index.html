@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Practice Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>eShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" id="homeLink">Home</a></li>
+                <li><a href="#products" id="productLink">Products</a></li>
+                <li><a href="#contact" id="contactLink">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to eShop</h2>
+        <p>Find the best deals on your favorite products!</p>
+        <input type="text" id="searchBox" placeholder="Search for products">
+        <button id="searchButton">Search</button>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product" id="product1">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Price: $20</p>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" min="1" max="10" value="1">
+                <button id="addToCart1">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Price: $30</p>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" min="1" max="10" value="1">
+                <button id="addToCart2">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="general">General Inquiry</option>
+                <option value="order">Order Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <label>How did you hear about us?</label>
+            <input type="radio" id="google" name="source" value="Google">
+            <label for="google">Google</label>
+            <input type="radio" id="friend" name="source" value="Friend">
+            <label for="friend">Friend</label>
+
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="newsletter">
+
+            <button type="submit" id="submitForm">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 eShop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
